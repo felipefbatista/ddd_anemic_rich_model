@@ -1,0 +1,1 @@
+# ddd_anemic_rich_model
