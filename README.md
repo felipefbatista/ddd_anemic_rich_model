@@ -1,5 +1,7 @@
 # Domain-Driven Design - Anemic Model x Rich Model
 
+### Reference: https://thedomaindrivendesign.io/anemic-model-x-rich-model/
+
 My intention is to use like example the scenario of a SCRUM model and be able to show in a practical way the difference between an implementation of Anemic Model and Rich Model.
 
 The use case is:
