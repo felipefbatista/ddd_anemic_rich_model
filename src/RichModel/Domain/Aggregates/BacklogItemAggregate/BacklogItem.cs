@@ -52,13 +52,13 @@ namespace RichModel.Domain.Entities
         }
         public void UncommitFromSprint()
         {
-            SprintId = null;
-
             DomainEventPublisher.Publish(new BacklogItemUncommitFromSprint
             {
                 Id = Id,
                 SprintId = SprintId.Value
             });
+
+            SprintId = null;
         }
         public bool IsCommittedToSprint() => SprintId != null && SprintId != default(int);
 

@@ -33,7 +33,7 @@ namespace RichModel.Infrastructure.Database
 
             BacklogItemTable.Add(backlogItem);
 
-            var sprint = new Sprint("",DateTime.Today, DateTime.Today);
+            var sprint = new Sprint("Sprint 1", DateTime.Today, DateTime.Today);
             sprint.SetStatus(SprintStatus.New);
             sprint.SetDescription("Create XYZ functionality");
 
