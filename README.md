@@ -20,4 +20,6 @@ And now, can you see the benefits of working with a Rich Model?
 
 That’s all, folks
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.paypal.com/donate/?hosted_button_id=5MDU6BTH7SHZN)
+
 **Felipe De Freitas Batista**
