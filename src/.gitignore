@@ -1,0 +1,6 @@
+### DotnetCore ###
+bin
+obj
+node_modules
+wwwrootnode_modules
+.vs
