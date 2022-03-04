@@ -1,5 +1,6 @@
 ﻿namespace RichModel.Domain.Enum
 {
+    //Simple enumeration class
     public class TaskStatus : Enumeration
     {
         public static readonly TaskStatus Todo = new TaskStatus(1, "Todo");
