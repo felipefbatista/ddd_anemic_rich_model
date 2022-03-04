@@ -19,3 +19,5 @@ Without inserting this rich behavior into the Backlog Item, the Client would hav
 And now, can you see the benefits of working with a Rich Model?
 
 That’s all, folks
+
+**Felipe De Freitas Batista**
