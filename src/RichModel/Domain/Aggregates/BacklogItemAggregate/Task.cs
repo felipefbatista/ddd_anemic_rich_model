@@ -20,6 +20,8 @@ namespace RichModel.Domain.Entities
         public DateTime? BeginDate { get; private set; }
         public DateTime? EndDate { get; private set; }
 
+        // TODO: implement business rules
+
         public void Validate()
         {
             if (string.IsNullOrEmpty(Description))

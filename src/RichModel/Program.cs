@@ -11,11 +11,11 @@ namespace RichModel
         {
             MemoryDatabase.Seed();
 
-            IBoardApplication sprintServices = new BoardApplication(new SprintRepository(), new BacklogItemRepository());
+            IBoardApplication boardApplication = new BoardApplication(new SprintRepository(), new BacklogItemRepository());
 
-            sprintServices.ToAllocateBacklogItemToaSprint(1, 1);
+            boardApplication.ToAllocateBacklogItemToaSprint(1, 1);
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("@Rich Model@");
         }
     }
 }

@@ -15,7 +15,7 @@ namespace AnemicModel
 
             sprintServices.InsertBacklogItem(1, 1);
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("@Anemic Model@");
         }
     }
 }

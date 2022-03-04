@@ -23,10 +23,12 @@ namespace RichModel.Domain.Entities
         public DateTime BeginDate { get; private set; }
         public DateTime EndDate { get; private set; }
 
-        public void SetStatus(SprintStatus status) => Status = status;
+        public void SetStatusToNew() => Status = SprintStatus.New;
         public void SetDescription(string description) => Description = description;
         public void SetBeginDate(DateTime beginDate) => BeginDate = beginDate;
         public void SetEndDate(DateTime endDate) => BeginDate = endDate;
+
+        // TODO: implement business rules
 
         public void Validate()
         {
