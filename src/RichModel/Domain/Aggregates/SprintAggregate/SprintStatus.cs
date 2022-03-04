@@ -1,5 +1,6 @@
 ﻿namespace RichModel.Domain.Enum
 {
+    //Simple enumeration class
     public class SprintStatus : Enumeration
     {
         public static readonly SprintStatus New = new SprintStatus(1, "New");
