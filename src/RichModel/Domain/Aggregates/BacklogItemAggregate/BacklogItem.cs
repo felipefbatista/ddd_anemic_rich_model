@@ -27,9 +27,17 @@ namespace RichModel.Domain.Entities
         public void SetSprintId(int? sprintId) => SprintId = sprintId;
         public void SetUserId(int? userId) => UserId = userId;
         public void SetStatusToNew() => Status = BacklogItemStatus.New;
-        public void SetStatusToCommitted() => Status = BacklogItemStatus.Committed;
         public void SetStatusToApproved() => Status = BacklogItemStatus.Approved;
-        public void SetStatusToDone() => Status = BacklogItemStatus.Done;
+        public void SetStatusToCommitted() => Status = BacklogItemStatus.Committed;
+        public void SetStatusToDone() 
+        {
+            if (Status != BacklogItemStatus.Committed)
+            {
+                throw new Exception("State machine error"); // Domain Exception
+            }
+
+            Status = BacklogItemStatus.Done;
+        }
         public void SetDescription(string description) => Description = description;
         public void SetBeginDate(DateTime? beginDate) => BeginDate = beginDate;
         public void SetEndDate(DateTime? endDate) => BeginDate = endDate;

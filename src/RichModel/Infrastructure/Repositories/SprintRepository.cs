@@ -36,7 +36,12 @@ namespace RichModel.Infrastructure.Repositories
         {
             var item = MemoryDatabase.SprintTable.FirstOrDefault(x => x.Id == entity.Id);
 
-            item.SetStatus(entity.Status);
+            PropertyInfo prop = item.GetType().GetProperty("Status");
+            if (prop != null)
+            {
+                prop.SetValue(item, entity.Status, null);
+            }
+
             item.SetDescription(entity.Description);
             item.SetBeginDate(entity.BeginDate);
             item.SetEndDate(entity.EndDate);

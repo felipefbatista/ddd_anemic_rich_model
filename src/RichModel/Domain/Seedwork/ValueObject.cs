@@ -1,6 +1,6 @@
 ﻿namespace RichModel.Domain
 {
-    public class ValueObject
+    public abstract class ValueObject
     {
     }
 }

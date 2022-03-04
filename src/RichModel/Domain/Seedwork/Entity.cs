@@ -1,6 +1,6 @@
 ﻿namespace RichModel.Domain
 {
-    public class Entity
+    public abstract class Entity
     {
     }
 }
